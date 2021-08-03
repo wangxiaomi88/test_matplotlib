@@ -9,7 +9,7 @@ y2=np.cos(x)/2
 #修改x轴刻度文本
 # names=["-π","-π/2","0","π/2","π"]
 names=[r"$-\pi$",r"$-\frac{\pi}{2}$","0",r"$\frac{\pi}{2}$",r"$\pi$"] #latex表达式
-mp.xticks([-np.pi,-np.pi/2,0,np.pi/2,np.pi], names)
+mp.xticks([-np.pi,-np.pi/2,0,np.pi/2,np.pi], names) #横坐标刻度赋值和标记名称
 
 #设置坐标轴
 ax=mp.gca() #坐标轴对象
@@ -42,10 +42,6 @@ mp.annotate(r"$[\frac{\pi}{2},1]$",xycoords="data",xy=(np.pi/2,1),
 
 #设置图例
 mp.legend()
-
-
-
-
 
 mp.show()
 
